@@ -16,7 +16,7 @@
     <nav>
         <ul class="navegacion" >  
             <li>
-                <a href="index.html"><img class="header__logo" src="img/eidos.png" alt="logo eidos"></a>
+                <a class="navegacion__item" id="nav-nombre" href="index.html">Hola soy Pedro</a>
             </li>    
             <li>
                 <a class="navegacion__item" href="#contenido-inicio">Inicio</a>
@@ -28,17 +28,20 @@
         </nav>
     </header>
     <main class="contenedor">
-        <section class="contenido-inicio" id="contenido-inicio">
-            <figure>
-                <img class="contenido-inicio__pagc" src="img/pagc.jpg" alt="imagen pagc">
-            </figure>
-            <article id="contenido-article">
-                <h1>Hola! Soy Pedro</h1>
-                <p>Cupiditate voluptatum adipisci nihil perferendis possimus blanditiis aliquid quos vitae voluptates quidem praesentium a fugit quod eveniet sint sapiente, repellat non aspernatur? Magnam dolor amet corrupti. Architecto vero consequatur labore nulla nihil.</p>
-                <a class="contenido-inicio__boton" href="#">Descarga mi CV</a>
-            </article>
-        </section>
-
+        <div class="grid">
+            <section class="contenido-inicio" id="contenido-inicio">
+                <figure>
+                    <img class="contenido-inicio__pagc" src="img/pagc.jpg" alt="imagen pagc">
+                </figure>
+            </section>
+            <section class="contenido-inicio">
+                    <article id="contenido-article">
+                        <h1>Hola! Soy Pedro</h1>
+                        <p>Cupiditate voluptatum adipisci nihil perferendis possimus blanditiis aliquid quos vitae voluptates quidem praesentium a fugit quod eveniet sint sapiente, repellat non aspernatur? Magnam dolor amet corrupti. Architecto vero consequatur labore nulla nihil.</p>
+                        <a class="contenido-inicio__boton"  href="#">Descarga mi CV</a>
+                    </article>
+            </section>
+        </div>
         <section class="contacto" id="contacto">
             <article class="contacto__sombra">
                 <h2>Hablemos!</h2>
