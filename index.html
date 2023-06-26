@@ -1,65 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro Garcia</title>
+    <link rel="shortcut icon" href="img/favicon-pagc.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="preload" href="css/styles.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header class="header">
-    <nav>
-        <ul class="navegacion" >  
-            <li>
-                <a class="navegacion__item" id="nav-nombre" href="index.html">Hola soy Pedro</a>
-            </li>    
-            <li>
-                <a class="navegacion__item" href="#contenido-inicio">Inicio</a>
-            </li>
-            <li>
-                <a  class="navegacion__item" href="#contacto">Contacto</a>
-            </li>
-        </ul>
-        </nav>
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <!-- <img class="logotipo" src="img/eidos.png" alt="logotipo"> -->
+                    <h1 class="logo__nombre no-margin centrar-texto">hola soy <span class="logo__bold">Pedro</span></h1>
+                </a>
+                <nav>
+                    <ul class="navegacion">
+                        <li>
+                            <a class="navegacion__enlace" href="#contenido-principal">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="navegacion__enlace" href="#contacto">Contacto</a>
+                        </li>
+                        <li>
+                            <a class="navegacion__enlace" href="proyectos.html">Proyectos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div> <!-- Cierre barra-->
+        </div> <!-- Cierre contenedor-->
     </header>
-    <main class="contenedor">
-        <div class="grid">
-            <section class="contenido-inicio" id="contenido-inicio">
+    <div class="contenedor contenido-principal" id="contenido-principal">
+        <main class="biografia centrar-texto">
+            <section class="selfie">
                 <figure>
-                    <img class="contenido-inicio__pagc" src="img/pagc.jpg" alt="imagen pagc">
+                    <img class="selfie-selfie" src="img/pagc.jpg" alt="imagen selfie">
                 </figure>
             </section>
-            <section class="contenido-inicio">
-                    <article id="contenido-article">
-                        <h1>Hola! Soy Pedro</h1>
-                        <p>Cupiditate voluptatum adipisci nihil perferendis possimus blanditiis aliquid quos vitae voluptates quidem praesentium a fugit quod eveniet sint sapiente, repellat non aspernatur? Magnam dolor amet corrupti. Architecto vero consequatur labore nulla nihil.</p>
-                        <a class="contenido-inicio__boton"  href="#">Descarga mi CV</a>
-                    </article>
-            </section>
-        </div>
-        <section class="contacto" id="contacto">
-            <article class="contacto__sombra">
-                <h2>Hablemos!</h2>
-                <p>eritatis qui quae nulla deleniti minus! Repudiandae, minima dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam exercitationem repellendus amet facilis inventore. Rerum nam voluptate laudantium provident suscipit, ipsa velit accusamus quod, a aut quo alias dolore numquam incidunt veritatis qui quae nulla deleniti minus! Repudiandae, minima dolores?</p>    
+        </main>
+        <section class="informacion-bio">
+            <article>
+                <h2>Hola! Soy Pedro</h2>
+                <p>Cupiditate voluptatum adipisci nihil perferendis possimus blanditiis aliquid quos vitae voluptates
+                    quidem praesentium a fugit quod eveniet sint sapiente, repellat non aspernatur? Magnam dolor amet
+                    corrupti. Architecto vero consequatur labore nulla nihil.</p>
+                <a class="boton" href="#">Descarga mi CV</a>
             </article>
-            <div class="contacto__icons">
-                <a class="contacto__icon" href="https://github.com/pagc97">
-                    <img src="img/github.png" alt="logo github">
-                </a>
-                <a class="contacto__icon" href="https://www.linkedin.com/in/pedro-garcia-a29477246/">
-                    <img src="img/linkedin.png" alt="logo linkedin">
-                </a>
-                <a class="contacto__icon" href="mailto:pagarciac.97@gmail.com">
-                    <img src="img/mail.png" alt="logo mail">
-                </a>
-            </div>
         </section>
-    </main>
-    <footer class="footer"><p>Todos los derechos reservados. Pedro Garcia</p></footer>
+    </div>
+    <section class="contacto contenedor" id="contacto">
+        <article class="entrada-sombra">
+            <h2 class="entrada__titulo">Hablemos!</h2>
+            <p class="entrada__inf">eritatis qui quae nulla deleniti minus! Repudiandae, minima dolores?Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Quisquam exercitationem repellendus amet facilis inventore.
+                Rerum nam voluptate laudantium provident suscipit, ipsa velit accusamus quod, a aut quo alias dolore
+                numquam incidunt veritatis qui quae nulla deleniti minus! Repudiandae, minima dolores?</p>
+        </article>
+    </section>
+        <div class="contacto-icons contenedor">
+            <a class="contacto-icon" href="https://github.com/pagc97">
+                <img src="img/github.png" alt="logo github">
+            </a>
+            <a class="contacto-icon" href="https://www.linkedin.com/in/pedro-garcia-a29477246/">
+                <img src="img/linkedin.png" alt="logo linkedin">
+            </a>
+            <a class="contacto-icon" href="mailto:pagarciac.97@gmail.com">
+                <img src="img/mail.png" alt="logo mail">
+            </a>
+
+        </div>
+    <footer class="footer">
+        <p>Todos los derechos reservados. Pedro Garcia</p>
+    </footer>
 </body>
+
 </html>
