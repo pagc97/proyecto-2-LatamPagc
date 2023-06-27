@@ -14,55 +14,67 @@
 </head>
 <body>
     <header class="header">
-    <nav>
-        <ul class="navegacion" >  
-            <li>
-                <a class="navegacion__item" id="nav-nombre" href="index.html">Hola soy Pedro</a>
-            </li>    
-            <li>
-                <a class="navegacion__item" href="#contenido-inicio">Proyectos</a>
-            </li>
-            <li>
-                <a  class="navegacion__item" href="#contacto">Contacto</a>
-            </li>
-            <li>
-                <a class="navegacion__item" href="index.html">Inicio</a>
-            </li>
-        </ul>
-        </nav>
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <img class="logotipo" src="img/logo.pagc.png" alt="logotipo">
+                </a>
+                <nav>
+                    <ul class="navegacion">
+                        <li>
+                            <a class="navegacion__enlace" href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="navegacion__enlace" href="#contacto">Contacto</a>
+                        </li>
+                        <li>
+                            <a class="navegacion__enlace" href="#proyectos"> Proyectos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div> <!-- Cierre barra-->
+        </div> <!-- Cierre contenedor-->
     </header>
-    <main class="contenedor">
+    <main class="contenedor" id="proyectos">
         <div class="titulo">
             <h1>Proyectos</h1>
         </div>
-        <div class="grid">
-            <section class="contenido-inicio" id="contenido-inicio">
-                <h2>Blog de Café</h2>
+        <div class="proyectos">
+            <section class="proyectos__blogcoffe">
+                <a href="https://blog-coffee-pagc.netlify.app/">
+                    <h2 class="titulos-h2">Blog de Café</h2>
+                </a>
                 <picture>
-                    <img src="img/blog-cafe.png" alt="Blog de Café">
+                    <a href="https://blog-coffee-pagc.netlify.app/">
+                        <img src="img/blog-cafe.png" alt="Blog de Café">
+                    </a>
                 </picture>
             </section>
-            <section  class="contenido-inicio" id="contenido-inicio">
-                <h2>Tienda de Camisetas</h2>
+            <section  class="proyectos__e-commerce" id="e-commerce">
+                <a href="https://frontend-store-pagc.netlify.app/">
+                    <h2 class="titulos-h2">Tienda de Camisetas</h2>
+                </a>
                 <picture>
-                    <img src="img/tienda-camisetas.png" alt="Tienda de Camisetas">
+                    <a href="https://frontend-store-pagc.netlify.app/">
+                        <img src="img/tienda-camisetas.png" alt="Tienda de Camisetas">
+                    </a>
                 </picture>
             </section>
         </div>
-        <section class="contacto" id="contacto">
-            <div class="contacto__icons">
-                <a class="contacto__icon" href="https://github.com/pagc97">
-                    <img src="img/github.png" alt="logo github">
-                </a>
-                <a class="contacto__icon" href="https://www.linkedin.com/in/pedro-garcia-a29477246/">
-                    <img src="img/linkedin.png" alt="logo linkedin">
-                </a>
-                <a class="contacto__icon" href="mailto:pagarciac.97@gmail.com">
-                    <img src="img/mail.png" alt="logo mail">
-                </a>
-            </div>
-        </section>
+        <div class="contacto-icons contenedor" id="contacto">
+            <a class="contacto-icon" href="https://github.com/pagc97">
+                <img src="img/github.png" alt="logo github">
+            </a>
+            <a class="contacto-icon" href="https://www.linkedin.com/in/pedro-garcia-a29477246/">
+                <img src="img/linkedin.png" alt="logo linkedin">
+            </a>
+            <a class="contacto-icon" href="mailto:pagarciac.97@gmail.com">
+                <img src="img/mail.png" alt="logo mail">
+            </a>
+        </div>
     </main>
-    <footer class="footer"><p>Todos los derechos reservados. Pedro Garcia</p></footer>
+    <footer class="footer">
+        <p>Todos los derechos reservados. Pedro Garcia</p>
+    </footer>
 </body>
 </html>
